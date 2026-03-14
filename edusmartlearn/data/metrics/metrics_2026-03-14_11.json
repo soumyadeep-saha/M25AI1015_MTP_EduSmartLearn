@@ -1,0 +1,273 @@
+{
+  "timestamp": "2026-03-14T11:09:56.642816",
+  "summary": {
+    "effectiveness": {
+      "task_success_rate": 0.9333333333333333,
+      "total_tasks": 15
+    },
+    "efficiency": {
+      "avg_response_time_ms": 1898.4228134155273,
+      "total_responses": 15
+    },
+    "robustness": {
+      "error_rate": 0.0,
+      "recovery_rate": 1.0
+    },
+    "safety": {
+      "safety_compliance_rate": 1.0,
+      "total_checks": 9,
+      "violations": 0
+    },
+    "counters": {
+      "safety_checks_total": 9,
+      "tasks_chat_total": 5,
+      "tasks_chat_success": 5,
+      "tasks_quiz_total": 6,
+      "tasks_quiz_success": 6,
+      "tasks_code_execution_total": 4,
+      "tasks_code_execution_success": 3
+    }
+  },
+  "raw_metrics": {
+    "safety_checks": [
+      {
+        "timestamp": "2026-03-14T11:05:04.619187",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:12.266479",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:19.706524",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:18.836920",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:47.070026",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:07:59.319966",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:12.354739",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:25.767763",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:09:14.624499",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      }
+    ],
+    "task_completion": [
+      {
+        "timestamp": "2026-03-14T11:05:09.948880",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:18.273035",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:26.913836",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:31.212169",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:44.436789",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:47.310688",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:52.283728",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:00.552794",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:06.371772",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:18.840226",
+        "task_type": "code_execution",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:47.073171",
+        "task_type": "code_execution",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:07:59.329056",
+        "task_type": "code_execution",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:13.702655",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:27.347847",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      },
+      {
+        "timestamp": "2026-03-14T11:09:18.148190",
+        "task_type": "code_execution",
+        "success": false,
+        "session_id": "3acf59f7-b36c-4a82-92af-7a292032e8fb"
+      }
+    ],
+    "response_times": [
+      {
+        "timestamp": "2026-03-14T11:05:09.948911",
+        "agent_id": "system",
+        "response_time_ms": 5329.933166503906,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:18.273050",
+        "agent_id": "system",
+        "response_time_ms": 6004.848003387451,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:26.913851",
+        "agent_id": "system",
+        "response_time_ms": 7205.045938491821,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:31.212192",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 1.4142990112304688,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:44.436812",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 3459.20991897583,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:47.310698",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 0.6110668182373047,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:05:52.283740",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 0.9560585021972656,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:00.552807",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 0.7719993591308594,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:06.371803",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 2.8378963470458984,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:18.840276",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 3.537893295288086,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-03-14T11:06:47.073194",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 3.4172534942626953,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-03-14T11:07:59.329090",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 10.182857513427734,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:13.702687",
+        "agent_id": "system",
+        "response_time_ms": 1350.5148887634277,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-03-14T11:08:27.347868",
+        "agent_id": "system",
+        "response_time_ms": 1578.5131454467773,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-03-14T11:09:18.148223",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 3524.547815322876,
+        "action": "execute_code"
+      }
+    ]
+  }
+}

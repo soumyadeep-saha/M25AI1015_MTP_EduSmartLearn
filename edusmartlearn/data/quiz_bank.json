@@ -1,0 +1,248 @@
+{
+  "questions": [
+    {
+      "question_id": "b6bee1f4",
+      "question_type": "mcq",
+      "topic": "machine_learning",
+      "difficulty": "easy",
+      "question_text": "What is the primary goal of supervised learning?",
+      "options": [
+        "A) Find hidden patterns in data",
+        "B) Learn from labeled examples to make predictions",
+        "C) Maximize a reward signal",
+        "D) Reduce data dimensionality"
+      ],
+      "correct_answer": "B",
+      "explanation": "Supervised learning uses labeled training data to learn a mapping from inputs to outputs.",
+      "created_at": "2026-02-07T19:57:21.787591",
+      "metadata": {}
+    },
+    {
+      "question_id": "6600b6d4",
+      "question_type": "mcq",
+      "topic": "neural_networks",
+      "difficulty": "medium",
+      "question_text": "What is the purpose of the activation function in a neural network?",
+      "options": [
+        "A) To initialize weights",
+        "B) To introduce non-linearity",
+        "C) To normalize inputs",
+        "D) To reduce overfitting"
+      ],
+      "correct_answer": "B",
+      "explanation": "Activation functions introduce non-linearity, allowing networks to learn complex patterns.",
+      "created_at": "2026-02-07T19:57:21.787598",
+      "metadata": {}
+    },
+    {
+      "question_id": "b33b50fb",
+      "question_type": "true_false",
+      "topic": "deep_learning",
+      "difficulty": "easy",
+      "question_text": "Backpropagation is used to compute gradients in neural networks.",
+      "options": null,
+      "correct_answer": "True",
+      "explanation": "Backpropagation efficiently computes gradients using the chain rule.",
+      "created_at": "2026-02-07T19:57:21.787603",
+      "metadata": {}
+    },
+    {
+      "question_id": "725a75e2",
+      "question_type": "mcq",
+      "topic": "machine learning",
+      "difficulty": "medium",
+      "question_text": "Which of the following is the BEST description of the difference between supervised and unsupervised learning?",
+      "options": [
+        "A) Supervised learning uses labeled data for training",
+        "while unsupervised learning uses unlabeled data. B) Supervised learning is used for regression problems",
+        "while unsupervised learning is used for classification problems. C) Supervised learning requires more computational power than unsupervised learning. D) Supervised learning algorithms are simpler to implement than unsupervised learning algorithms."
+      ],
+      "correct_answer": "A",
+      "explanation": "Supervised learning algorithms learn from labeled data, where the desired output is provided. Unsupervised learning algorithms, on the other hand, learn from unlabeled data, discovering patterns and structures on their own.",
+      "created_at": "2026-02-07T20:11:12.592765",
+      "metadata": {}
+    },
+    {
+      "question_id": "6cc5d6fe",
+      "question_type": "short_answer",
+      "topic": "machine learning",
+      "difficulty": "medium",
+      "question_text": "Explain in your own words how \"overfitting\" can negatively impact a machine learning model's performance and suggest one method to mitigate it.",
+      "options": null,
+      "correct_answer": "Overfitting occurs when a model learns the training data too well, including its noise and specific details. This leads to excellent performance on the training data but poor generalization to new, unseen data. A method to mitigate overfitting is cross-validation, which helps to estimate the model's performance on unseen data and tune hyperparameters to prevent it from memorizing the training data.",
+      "explanation": "The answer should capture the core idea that overfitting leads to poor generalization. Mentioning a valid mitigation technique like cross-validation, regularization, or early stopping is necessary.",
+      "created_at": "2026-02-07T20:11:12.592831",
+      "metadata": {}
+    },
+    {
+      "question_id": "8dc5913b",
+      "question_type": "true_false",
+      "topic": "machine learning",
+      "difficulty": "medium",
+      "question_text": "True or False: A machine learning model that achieves 100% accuracy on the training data is always the best model to deploy in a real-world application.",
+      "options": null,
+      "correct_answer": "False",
+      "explanation": "Achieving 100% accuracy on the training data often indicates overfitting. A model that is too specialized to the training data will likely perform poorly on new, unseen data. The goal is to find a model that generalizes well, even if it means sacrificing some accuracy on the training data.",
+      "created_at": "2026-02-07T20:11:12.592857",
+      "metadata": {}
+    },
+    {
+      "question_id": "ce5d9cfc",
+      "question_type": "mcq",
+      "topic": "neural networks",
+      "difficulty": "medium",
+      "question_text": "Which of the following best describes the role of the activation function in a neural network?",
+      "options": [
+        "A) To normalize the input data. B) To introduce non-linearity",
+        "allowing the network to learn complex patterns. C) To reduce the number of weights in the network. D) To prevent overfitting by randomly dropping out neurons."
+      ],
+      "correct_answer": "B",
+      "explanation": "Activation functions introduce non-linearity into the network. Without them, a neural network would simply be a linear regression model, unable to learn complex, non-linear relationships in the data.",
+      "created_at": "2026-03-14T07:37:50.466904",
+      "metadata": {}
+    },
+    {
+      "question_id": "c5e3722b",
+      "question_type": "short_answer",
+      "topic": "neural networks",
+      "difficulty": "medium",
+      "question_text": "Explain the concept of backpropagation in the context of training a neural network.",
+      "options": null,
+      "correct_answer": "Backpropagation is the process of calculating the gradient of the loss function with respect to the weights of the network and then updating those weights to minimize the loss. It involves propagating the error signal backwards through the network layers to adjust the weights.",
+      "explanation": "This answer demonstrates understanding of the core mechanism by which neural networks learn. A good answer should mention both the calculation of the gradient and the updating of the weights based on that gradient.",
+      "created_at": "2026-03-14T07:37:50.467113",
+      "metadata": {}
+    },
+    {
+      "question_id": "2df5e5e7",
+      "question_type": "true_false",
+      "topic": "neural networks",
+      "difficulty": "medium",
+      "question_text": "True or False: Increasing the number of layers in a neural network always leads to improved performance.",
+      "options": null,
+      "correct_answer": "False",
+      "explanation": "While adding more layers can allow a neural network to learn more complex patterns, it can also lead to overfitting, increased computational cost, and the vanishing/exploding gradient problem. Therefore, simply increasing the number of layers does not guarantee improved performance.",
+      "created_at": "2026-03-14T07:37:50.467355",
+      "metadata": {}
+    },
+    {
+      "question_id": "51c96772",
+      "question_type": "mcq",
+      "topic": "deep learning",
+      "difficulty": "medium",
+      "question_text": "Which of the following is a key advantage of deep learning models compared to traditional machine learning models when dealing with unstructured data like images or text?",
+      "options": [
+        "A) Deep learning models generally require less computational power. B) Deep learning models can automatically learn hierarchical features from the data. C) Deep learning models always provide more interpretable results. D) Deep learning models are less prone to overfitting."
+      ],
+      "correct_answer": "B",
+      "explanation": "Deep learning's ability to automatically learn hierarchical features (e.g., edges, shapes, objects in images) without manual feature engineering is a significant advantage over traditional methods that require hand-crafted features.",
+      "created_at": "2026-03-14T07:38:08.316931",
+      "metadata": {}
+    },
+    {
+      "question_id": "24cc7208",
+      "question_type": "short_answer",
+      "topic": "deep learning",
+      "difficulty": "medium",
+      "question_text": "Explain the concept of \"vanishing gradients\" in the context of training deep neural networks and describe one technique used to mitigate this problem.",
+      "options": null,
+      "correct_answer": "Vanishing gradients occur when gradients become extremely small during backpropagation, preventing weights in earlier layers from updating effectively. This hinders learning, especially in deep networks. Techniques to mitigate this include using activation functions like ReLU, employing batch normalization, or using skip connections (as in ResNets).",
+      "explanation": "This question assesses understanding of a common problem in deep learning and requires the student to recall a solution, demonstrating comprehension beyond simple definition.",
+      "created_at": "2026-03-14T07:38:08.316957",
+      "metadata": {}
+    },
+    {
+      "question_id": "97eedf75",
+      "question_type": "true_false",
+      "topic": "deep learning",
+      "difficulty": "medium",
+      "question_text": "True or False: Increasing the number of layers in a neural network always leads to improved performance.",
+      "options": null,
+      "correct_answer": "False",
+      "explanation": "While adding layers *can* improve performance by allowing the network to learn more complex patterns, it also increases the risk of overfitting, vanishing gradients, and requires more data and computational resources. Therefore, simply adding layers doesn't guarantee better results.",
+      "created_at": "2026-03-14T07:38:08.316980",
+      "metadata": {}
+    },
+    {
+      "question_id": "516f006c",
+      "question_type": "mcq",
+      "topic": "machine learning algorithms",
+      "difficulty": "medium",
+      "question_text": "Which of the following statements best describes the bias-variance tradeoff in machine learning?",
+      "options": [
+        "A) Minimizing both bias and variance is always possible by using complex models. B) Decreasing bias always leads to an increase in variance",
+        "and vice versa. C) Finding a balance between a model's ability to fit the training data (low bias) and its ability to generalize to unseen data (low variance). D) Bias refers to errors on the training data",
+        "while variance refers to errors on the testing data."
+      ],
+      "correct_answer": "C",
+      "explanation": "The bias-variance tradeoff is about finding the sweet spot where the model is complex enough to capture the underlying patterns in the data (low bias) but not so complex that it fits the noise and generalizes poorly (low variance). Option C captures this concept accurately.",
+      "created_at": "2026-03-14T10:11:29.291274",
+      "metadata": {}
+    },
+    {
+      "question_id": "76d011f5",
+      "question_type": "short_answer",
+      "topic": "machine learning algorithms",
+      "difficulty": "medium",
+      "question_text": "Explain in your own words how a decision tree algorithm makes predictions, and describe one common method to prevent it from overfitting.",
+      "options": null,
+      "correct_answer": "A decision tree algorithm makes predictions by recursively partitioning the data based on feature values. At each node, the algorithm selects the feature that best splits the data into more homogeneous groups with respect to the target variable. This process continues until a stopping criterion is met, such as reaching a maximum depth or having a minimum number of samples in a leaf node. To prevent overfitting, common methods include pruning the tree (removing branches that don't improve generalization performance) or setting a maximum depth for the tree.",
+      "explanation": "This answer demonstrates understanding of the decision tree's recursive partitioning process and the concept of overfitting, along with a valid method to combat it.",
+      "created_at": "2026-03-14T10:11:29.291445",
+      "metadata": {}
+    },
+    {
+      "question_id": "18122377",
+      "question_type": "true_false",
+      "topic": "machine learning algorithms",
+      "difficulty": "medium",
+      "question_text": "True or False: K-Nearest Neighbors (KNN) is a parametric machine learning algorithm because it estimates parameters from the training data to define a decision boundary.",
+      "options": null,
+      "correct_answer": "False",
+      "explanation": "KNN is a non-parametric algorithm. It doesn't explicitly learn a set of parameters. Instead, it relies on the training data itself to make predictions by finding the 'k' nearest data points to a new, unseen data point.",
+      "created_at": "2026-03-14T10:11:29.291481",
+      "metadata": {}
+    },
+    {
+      "question_id": "fd2281ec",
+      "question_type": "mcq",
+      "topic": "python programming",
+      "difficulty": "medium",
+      "question_text": "What is the primary difference between a list and a tuple in Python?",
+      "options": [
+        "A) Lists are mutable",
+        "while tuples are immutable. B) Lists can only store integers",
+        "while tuples can store any data type. C) Lists are defined using parentheses",
+        "while tuples are defined using square brackets. D) Lists are faster to iterate through than tuples."
+      ],
+      "correct_answer": "A",
+      "explanation": "Lists are mutable, meaning their elements can be changed after creation. Tuples, on the other hand, are immutable, meaning their elements cannot be changed after creation. This is the fundamental difference.",
+      "created_at": "2026-03-14T11:05:44.410237",
+      "metadata": {}
+    },
+    {
+      "question_id": "ff700f37",
+      "question_type": "short_answer",
+      "topic": "python programming",
+      "difficulty": "medium",
+      "question_text": "Explain the concept of \"duck typing\" in Python and provide a simple example of how it is used.",
+      "options": null,
+      "correct_answer": "Duck typing is a concept where the type or class of an object is less important than the methods it defines. If an object \"walks like a duck and quacks like a duck,\" then it is treated as a duck. Example: If a function expects an object with a `quack()` method, any object with a `quack()` method will work, regardless of its actual class.",
+      "explanation": "This tests the understanding of a core Pythonic concept. The answer needs to explain the principle and provide a relevant, concise example.",
+      "created_at": "2026-03-14T11:05:44.410264",
+      "metadata": {}
+    },
+    {
+      "question_id": "63e06890",
+      "question_type": "true_false",
+      "topic": "python programming",
+      "difficulty": "medium",
+      "question_text": "True or False: In Python, you can use the `else` statement in conjunction with a `for` loop to execute a block of code if the loop completes without encountering a `break` statement.",
+      "options": null,
+      "correct_answer": "True",
+      "explanation": "The `else` block after a `for` loop is executed only if the loop completes normally (i.e., without hitting a `break` statement). This is a less commonly known feature and tests deeper understanding.",
+      "created_at": "2026-03-14T11:05:44.410280",
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# EduSmartLearn - Safe Multi-Agent Teaching System
+# Core dependencies
+
+# Google Gemini LLM (new SDK)
+google-genai>=1.0.0
+
+# Data validation and settings
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Web framework for MCP server
+fastapi>=0.109.0
+uvicorn>=0.27.0
+httpx>=0.26.0
+
+# Vector store for RAG (Retrieval-Augmented Generation)
+# Using chromadb directly without LangChain to avoid dependency conflicts
+chromadb>=0.5.0
+
+# Embeddings
+sentence-transformers>=3.0.0
+
+# Code execution sandbox
+RestrictedPython>=7.0
+
+# Async utilities
+aiofiles>=23.2.1
+
+# Retry logic
+tenacity>=8.2.3
+
+# Structured logging
+structlog>=24.1.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
