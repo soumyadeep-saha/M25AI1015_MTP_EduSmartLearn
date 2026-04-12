@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-04-11T11:39:24.920073",
+  "summary": {
+    "effectiveness": {
+      "task_success_rate": 0.6666666666666666,
+      "total_tasks": 6
+    },
+    "efficiency": {
+      "avg_response_time_ms": 3594.0638383229575,
+      "total_responses": 6
+    },
+    "robustness": {
+      "error_rate": 0.0,
+      "recovery_rate": 1.0
+    },
+    "safety": {
+      "safety_compliance_rate": 1.0,
+      "total_checks": 5,
+      "violations": 0
+    },
+    "counters": {
+      "safety_checks_total": 5,
+      "tasks_chat_total": 2,
+      "tasks_chat_success": 2,
+      "tasks_quiz_total": 1,
+      "tasks_quiz_success": 1,
+      "tasks_code_execution_total": 3,
+      "tasks_code_execution_success": 1
+    }
+  },
+  "raw_metrics": {
+    "safety_checks": [
+      {
+        "timestamp": "2026-04-11T11:35:22.632857",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:11.564846",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:45.108003",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:37:41.787615",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:38:07.145611",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      }
+    ],
+    "task_completion": [
+      {
+        "timestamp": "2026-04-11T11:35:28.668629",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:35:40.170473",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:15.490147",
+        "task_type": "code_execution",
+        "success": false,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:45.114366",
+        "task_type": "code_execution",
+        "success": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:37:47.949948",
+        "task_type": "code_execution",
+        "success": false,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      },
+      {
+        "timestamp": "2026-04-11T11:38:09.327858",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "462fc2c1-70f6-4a56-961d-ba04cec42bf2"
+      }
+    ],
+    "response_times": [
+      {
+        "timestamp": "2026-04-11T11:35:28.668673",
+        "agent_id": "system",
+        "response_time_ms": 6036.4930629730225,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-04-11T11:35:40.170488",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 3251.404047012329,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:15.490159",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 3925.334930419922,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-04-11T11:36:45.114409",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 6.772041320800781,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-04-11T11:37:47.949971",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 6162.739038467407,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-04-11T11:38:09.327880",
+        "agent_id": "system",
+        "response_time_ms": 2181.6399097442627,
+        "action": "chat"
+      }
+    ]
+  }
+}

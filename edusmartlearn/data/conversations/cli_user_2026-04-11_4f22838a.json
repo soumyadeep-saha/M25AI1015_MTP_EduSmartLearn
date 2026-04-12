@@ -1,0 +1,17 @@
+{
+  "session_id": "4f22838a-a38d-4e04-8bb2-be6f3d0a35f8",
+  "user_id": "cli_user",
+  "created_at": "2026-04-11T11:32:13.290060",
+  "last_activity": "2026-04-11T11:32:34.672714",
+  "status": "active",
+  "topics": [],
+  "messages": [
+    {
+      "turn_id": "fde7fcb5",
+      "role": "user",
+      "content": "Explain backpropagation in neural networks with a simple example",
+      "timestamp": "2026-04-11T11:32:34.672581",
+      "metadata": {}
+    }
+  ]
+}

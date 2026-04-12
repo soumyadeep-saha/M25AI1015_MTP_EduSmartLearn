@@ -274,6 +274,11 @@ class EduSmartLearn:
             response_time_ms=response_time_ms,
             action="chat"
         )
+        # Track tool calls: safety_check + tutor LLM call + optional doc_search
+        metrics_collector.record_tool_latency(tool_name="safety_check", latency_ms=0)
+        metrics_collector.record_tool_latency(tool_name="llm_generate", latency_ms=response_time_ms)
+        if tutor_response.message_type == MessageType.TASK_DELEGATION:
+            metrics_collector.record_tool_latency(tool_name="doc_search", latency_ms=0)
         
         return response_text
     
@@ -328,6 +333,9 @@ class EduSmartLearn:
             response_time_ms=response_time_ms,
             action="generate_quiz"
         )
+        # Track tool calls: quiz_bank + llm_generate
+        metrics_collector.record_tool_latency(tool_name="quiz_bank", latency_ms=response_time_ms)
+        metrics_collector.record_tool_latency(tool_name="llm_generate", latency_ms=0)
         
         return response.payload
     
@@ -395,6 +403,9 @@ class EduSmartLearn:
             response_time_ms=response_time_ms,
             action="execute_code"
         )
+        # Track tool calls: safety_check + code_run
+        metrics_collector.record_tool_latency(tool_name="safety_check", latency_ms=0)
+        metrics_collector.record_tool_latency(tool_name="code_run", latency_ms=response_time_ms)
         
         return response.payload
     
@@ -445,12 +456,18 @@ async def interactive_cli():
     await system.initialize()
     print("System ready!\n")
     
+    # Ask for user ID
+    user_id = input("Enter your User ID (or press Enter for 'cli_user'): ").strip()
+    if not user_id:
+        user_id = "cli_user"
+    
     # Start session
-    session = system.start_session("cli_user")
+    session = system.start_session(user_id)
     
     # Initialize learner profile (increments session count, auto-saves)
-    system.student.initialize_session("cli_user")
+    system.student.initialize_session(user_id)
     
+    print(f"\nWelcome, {user_id}!")
     print(f"Session started: {session.session_id}\n")
     
     print("Commands:")
@@ -498,11 +515,11 @@ async def interactive_cli():
                 print(f"\n{result.get('output', 'Execution complete')}\n")
             
             elif user_input.lower() == "/profile":
-                result = await system.get_learner_profile("cli_user")
+                result = await system.get_learner_profile(user_id)
                 print(f"\n{result.get('output', 'Profile loaded')}\n")
             
             elif user_input.lower() == "/history":
-                conversations = session_store.load_user_conversations("cli_user")
+                conversations = session_store.load_user_conversations(user_id)
                 if not conversations:
                     print("\nNo previous conversations found.\n")
                 else:
@@ -529,7 +546,7 @@ async def interactive_cli():
             
             else:
                 # Regular chat
-                response = await system.chat(user_input, session.session_id, "cli_user")
+                response = await system.chat(user_input, session.session_id, user_id)
                 print(f"\nTutor: {response}\n")
                 
         except KeyboardInterrupt:

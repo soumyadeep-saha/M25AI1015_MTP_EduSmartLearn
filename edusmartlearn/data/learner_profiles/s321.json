@@ -1,7 +1,7 @@
 {
-  "user_id": "cli_user",
-  "created_at": "2026-03-14T11:04:44.987612",
-  "last_updated": "2026-04-11T11:33:31.463489",
+  "user_id": "s321",
+  "created_at": "2026-04-12T11:49:38.898284",
+  "last_updated": "2026-04-12T11:49:38.898509",
   "mastery_levels": {},
   "preferences": {
     "explanation_style": "balanced",
@@ -11,7 +11,7 @@
   "misconceptions": [],
   "quiz_history": [],
   "topics_studied": [],
-  "session_count": 3,
+  "session_count": 1,
   "long_term_memory": {
     "key_learnings": [],
     "conversation_summaries": [],

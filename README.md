@@ -147,6 +147,7 @@ rm -rf venv/
 # /usr/local/bin/python3 --version
 /usr/local/bin/python3 -m venv venv # please use a different pathin your own machine, I have used my own python path
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+#deactivate
 python --version
 pip install -r requirements.txt
 ```

@@ -243,6 +243,45 @@
       "explanation": "The `else` block after a `for` loop is executed only if the loop completes normally (i.e., without hitting a `break` statement). This is a less commonly known feature and tests deeper understanding.",
       "created_at": "2026-03-14T11:05:44.410280",
       "metadata": {}
+    },
+    {
+      "question_id": "7795cfb5",
+      "question_type": "mcq",
+      "topic": "supervised learning",
+      "difficulty": "medium",
+      "question_text": "In supervised learning, what is the primary role of the labeled dataset?",
+      "options": [
+        "A) To provide a set of features for clustering the data. B) To act as a guide",
+        "showing the algorithm the desired output for given inputs. C) To randomly initialize the weights of the model. D) To evaluate the model's performance on unseen data."
+      ],
+      "correct_answer": "B",
+      "explanation": "The labeled dataset in supervised learning is crucial because it provides the algorithm with examples of inputs paired with their correct outputs. This allows the algorithm to learn the mapping between inputs and outputs, enabling it to make predictions on new, unseen data.",
+      "created_at": "2026-04-11T11:35:40.161703",
+      "metadata": {}
+    },
+    {
+      "question_id": "46af19ff",
+      "question_type": "short_answer",
+      "topic": "supervised learning",
+      "difficulty": "medium",
+      "question_text": "Explain the difference between a classification and a regression problem in the context of supervised learning. Give a real-world example of each.",
+      "options": null,
+      "correct_answer": "Classification predicts a categorical output (e.g., spam/not spam), while regression predicts a continuous output (e.g., house price). Example of classification: Email spam detection. Example of regression: Predicting stock prices.",
+      "explanation": "Classification deals with discrete, categorical labels, while regression deals with continuous numerical values. The examples illustrate how these different types of supervised learning are applied in practice.",
+      "created_at": "2026-04-11T11:35:40.161735",
+      "metadata": {}
+    },
+    {
+      "question_id": "45f5c97f",
+      "question_type": "true_false",
+      "topic": "supervised learning",
+      "difficulty": "medium",
+      "question_text": "True or False: Overfitting in supervised learning occurs when a model performs very well on the training data but poorly on new, unseen data.",
+      "options": null,
+      "correct_answer": "True",
+      "explanation": "Overfitting happens when a model learns the training data too well, including its noise and specific details. This leads to excellent performance on the training set but poor generalization to new data because the model has essentially memorized the training examples instead of learning the underlying patterns.",
+      "created_at": "2026-04-11T11:35:40.161754",
+      "metadata": {}
     }
   ]
 }
