@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-04-12T12:00:13.323019",
+  "summary": {
+    "effectiveness": {
+      "task_success_rate": 1.0,
+      "total_tasks": 2
+    },
+    "efficiency": {
+      "avg_response_time_ms": 0.8819103240966797,
+      "total_responses": 2
+    },
+    "robustness": {
+      "error_rate": 0.0,
+      "recovery_rate": 1.0
+    },
+    "safety": {
+      "safety_compliance_rate": 1.0
+    },
+    "counters": {
+      "tasks_quiz_total": 2,
+      "tasks_quiz_success": 2
+    }
+  },
+  "raw_metrics": {
+    "task_completion": [
+      {
+        "timestamp": "2026-04-12T12:00:04.132983",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "999f67b0-8313-4521-aced-c73e1ca85a05"
+      },
+      {
+        "timestamp": "2026-04-12T12:00:06.983232",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "999f67b0-8313-4521-aced-c73e1ca85a05"
+      }
+    ],
+    "response_times": [
+      {
+        "timestamp": "2026-04-12T12:00:04.133017",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 1.3108253479003906,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-04-12T12:00:06.983244",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 0.45299530029296875,
+        "action": "generate_quiz"
+      }
+    ],
+    "tool_latency": [
+      {
+        "timestamp": "2026-04-12T12:00:04.133029",
+        "tool_name": "quiz_bank",
+        "latency_ms": 1.3108253479003906
+      },
+      {
+        "timestamp": "2026-04-12T12:00:04.133039",
+        "tool_name": "llm_generate",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T12:00:06.983251",
+        "tool_name": "quiz_bank",
+        "latency_ms": 0.45299530029296875
+      },
+      {
+        "timestamp": "2026-04-12T12:00:06.983256",
+        "tool_name": "llm_generate",
+        "latency_ms": 0
+      }
+    ]
+  }
+}

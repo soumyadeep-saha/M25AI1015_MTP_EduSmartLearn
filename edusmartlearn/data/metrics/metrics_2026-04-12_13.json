@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-04-12T13:47:56.215477",
+  "summary": {
+    "effectiveness": {
+      "task_success_rate": 0.8571428571428571,
+      "total_tasks": 7
+    },
+    "efficiency": {
+      "avg_response_time_ms": 1248.7597806113106,
+      "total_responses": 7
+    },
+    "robustness": {
+      "error_rate": 0.0,
+      "recovery_rate": 1.0
+    },
+    "safety": {
+      "safety_compliance_rate": 1.0,
+      "total_checks": 4,
+      "violations": 0
+    },
+    "counters": {
+      "tasks_quiz_total": 3,
+      "tasks_quiz_success": 3,
+      "safety_checks_total": 4,
+      "tasks_code_execution_total": 2,
+      "tasks_code_execution_success": 1,
+      "tasks_chat_total": 2,
+      "tasks_chat_success": 2
+    }
+  },
+  "raw_metrics": {
+    "task_completion": [
+      {
+        "timestamp": "2026-04-12T13:41:36.946945",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:41:56.192733",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:42:24.393163",
+        "task_type": "code_execution",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:42:53.346578",
+        "task_type": "code_execution",
+        "success": false,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:24.053032",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:41.964096",
+        "task_type": "chat",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:47:50.513962",
+        "task_type": "quiz",
+        "success": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      }
+    ],
+    "response_times": [
+      {
+        "timestamp": "2026-04-12T13:41:36.946973",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 3.1359195709228516,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-04-12T13:41:56.192748",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 3.036975860595703,
+        "action": "generate_quiz"
+      },
+      {
+        "timestamp": "2026-04-12T13:42:24.393175",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 9.974956512451172,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-04-12T13:42:53.346588",
+        "agent_id": "code_execution_agent",
+        "response_time_ms": 4885.594844818115,
+        "action": "execute_code"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:24.053069",
+        "agent_id": "system",
+        "response_time_ms": 1920.4959869384766,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:41.964110",
+        "agent_id": "system",
+        "response_time_ms": 1916.0878658294678,
+        "action": "chat"
+      },
+      {
+        "timestamp": "2026-04-12T13:47:50.514006",
+        "agent_id": "evaluator_agent",
+        "response_time_ms": 2.991914749145508,
+        "action": "generate_quiz"
+      }
+    ],
+    "tool_latency": [
+      {
+        "timestamp": "2026-04-12T13:41:36.946984",
+        "tool_name": "quiz_bank",
+        "latency_ms": 3.1359195709228516
+      },
+      {
+        "timestamp": "2026-04-12T13:41:36.946993",
+        "tool_name": "llm_generate",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:41:56.192754",
+        "tool_name": "quiz_bank",
+        "latency_ms": 3.036975860595703
+      },
+      {
+        "timestamp": "2026-04-12T13:41:56.192759",
+        "tool_name": "llm_generate",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:42:24.393178",
+        "tool_name": "safety_check",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:42:24.393181",
+        "tool_name": "code_run",
+        "latency_ms": 9.974956512451172
+      },
+      {
+        "timestamp": "2026-04-12T13:42:53.346594",
+        "tool_name": "safety_check",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:42:53.346598",
+        "tool_name": "code_run",
+        "latency_ms": 4885.594844818115
+      },
+      {
+        "timestamp": "2026-04-12T13:43:24.053082",
+        "tool_name": "safety_check",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:43:24.053090",
+        "tool_name": "llm_generate",
+        "latency_ms": 1920.4959869384766
+      },
+      {
+        "timestamp": "2026-04-12T13:43:41.964119",
+        "tool_name": "safety_check",
+        "latency_ms": 0
+      },
+      {
+        "timestamp": "2026-04-12T13:43:41.964126",
+        "tool_name": "llm_generate",
+        "latency_ms": 1916.0878658294678
+      },
+      {
+        "timestamp": "2026-04-12T13:47:50.514016",
+        "tool_name": "quiz_bank",
+        "latency_ms": 2.991914749145508
+      },
+      {
+        "timestamp": "2026-04-12T13:47:50.514023",
+        "tool_name": "llm_generate",
+        "latency_ms": 0
+      }
+    ],
+    "safety_checks": [
+      {
+        "timestamp": "2026-04-12T13:42:24.383569",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:42:48.461013",
+        "check_type": "code_execution_consent",
+        "passed": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:22.131672",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      },
+      {
+        "timestamp": "2026-04-12T13:43:40.047117",
+        "check_type": "content_filter",
+        "passed": true,
+        "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef"
+      }
+    ]
+  }
+}

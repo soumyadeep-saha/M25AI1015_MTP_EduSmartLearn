@@ -1,0 +1,38 @@
+{
+  "session_id": "6c4a3bc6-5171-425d-9714-d9d8ce5e98ef",
+  "user_id": "soumya3",
+  "created_at": "2026-04-12T13:41:09.232170",
+  "last_activity": "2026-04-12T13:43:41.963064",
+  "status": "active",
+  "topics": [],
+  "messages": [
+    {
+      "turn_id": "86a2c5e5",
+      "role": "user",
+      "content": "What's the weather like today?",
+      "timestamp": "2026-04-12T13:43:22.120649",
+      "metadata": {}
+    },
+    {
+      "turn_id": "bcda2286",
+      "role": "assistant",
+      "content": "Hi there! I'm afraid I can't give you a real-time weather update, as I don't have access to live weather data. \n\nHowever, I can suggest some great ways to find out! You could check a reliable weather app on your phone, visit a weather website like AccuWeather or The Weather Channel, or even ask a smart speaker like Alexa or Google Home.\n\nIs there anything else I can help you with today? Perhaps I could help you understand different weather patterns or how weather forecasts are made? Just let me know! \ud83d\ude0a\n",
+      "timestamp": "2026-04-12T13:43:24.050984",
+      "metadata": {}
+    },
+    {
+      "turn_id": "59405d4e",
+      "role": "user",
+      "content": "asdfghjkl 12345 !@#$%",
+      "timestamp": "2026-04-12T13:43:40.045960",
+      "metadata": {}
+    },
+    {
+      "turn_id": "c71fae24",
+      "role": "assistant",
+      "content": "Hi there! I see you've typed \"asdfghjkl 12345 !@#$%\". Is there something specific you'd like to know or do with that input? \n\nSometimes, students type in random characters to test things out, and that's perfectly fine! If you're just experimenting, feel free to explore. If you have a question about it, or if it's part of something you're working on, let me know and I'll do my best to help! \ud83d\ude0a\n",
+      "timestamp": "2026-04-12T13:43:41.963058",
+      "metadata": {}
+    }
+  ]
+}
